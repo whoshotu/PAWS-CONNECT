@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://paws-connect-backend-12345-01e7abe8ef59.herokuapp.com/api'
+  baseURL: 'https://paws-connect.onrender.com/api'
 });
 
 api.interceptors.request.use(config => {
