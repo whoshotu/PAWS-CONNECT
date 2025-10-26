@@ -45,11 +45,15 @@ const Register = () => {
           email,
           password,
         };
+        console.log('Attempting to register with:', newUser);
 
         const res = await api.post('/users', newUser);
+        console.log('Registration successful, response:', res);
+
         login(res.data); // Log the user in immediately
         navigate('/'); // Redirect to home page on success
       } catch (err) {
+        console.error('Registration failed, error object:', err);
         if (err.response) {
           // The request was made and the server responded with a status code
           // that falls out of the range of 2xx
