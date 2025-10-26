@@ -1,0 +1,3 @@
+[dotenv@17.2.3] injecting env (2) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+Server is running on port 5001
+MongoDB Connected: ac-m2gbwkl-shard-00-00.n9a7nd2.mongodb.net

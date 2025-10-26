@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "googlecloudtools.cloudcode",
+        "andrewdircks.google-cloud-platform-ssh",
+        "github.vscode-github-actions",
+        "ms-vscode-remote.remote-wsl"
+    ]
+}

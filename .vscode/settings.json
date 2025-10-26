@@ -1,0 +1,10 @@
+{
+    "editor.defaultFormatter": null,
+    "geminicodeassist.agentDebugMode": true,
+    "geminicodeassist.customCommands": {
+        "role": "Senior full-stack product engineer, UX designer, and AI architect"
+    },
+    "geminicodeassist.codeGenerationPaneViewEnabled": true,
+    "geminicodeassist.verboseLogging": true,
+    "coderabbit.autoReviewMode": "auto"
+}

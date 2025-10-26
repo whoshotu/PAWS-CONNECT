@@ -1,0 +1,5 @@
+runtime: nodejs22
+env_variables:
+  PORT: 5001
+  MONGODB_URI: mongodb+srv://lopezanth661_db_user:822Stulare@cluster0.n9a7nd2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+  JWT_SECRET: pawsconnectsecret
