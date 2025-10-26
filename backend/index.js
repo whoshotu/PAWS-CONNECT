@@ -16,10 +16,7 @@ connectDB();
 const app = express();
 
 // Middleware
-app.use(cors({
-  origin: 'https://pawz-connect.netlify.app',
-  optionsSuccessStatus: 200
-}));
+app.use(cors());
 app.use(express.json());
 
 // Set static folder
