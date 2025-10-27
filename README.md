@@ -39,8 +39,8 @@ This file tracks the development progress and current status of the PAWS-CONNECT
 - **AI Integration:**
     - Content moderation is implemented using the Google Gemini API. **(Requires user-provided API key)**
 - **Deployment:**
-    - **Backend:** Deployed to Heroku at [https://paws-connect-backend-12345-01e7abe8ef59.herokuapp.com/](https://paws-connect-backend-12345-01e7abe8ef59.herokuapp.com/).
-    - **Frontend:** Deployed to Netlify. **(URL to be provided by user)**
+    - **Backend:** Deployed to Render at [https://paws-connect.onrender.com/](https://paws-connect.onrender.com/).
+    - **Frontend:** Deployed to Netlify at [https://pawz-connect.netlify.app/](https://pawz-connect.netlify.app/).
 - **Known Issues:**
     - **[Resolved]** Users are currently unable to log in to the deployed application. This was due to missing environment variables on the Heroku server.
 
@@ -48,13 +48,13 @@ This file tracks the development progress and current status of the PAWS-CONNECT
 
 ## Deployment Configuration
 
-For the deployed application to function correctly, the following environment variables must be set on the Heroku server:
+For the deployed application to function correctly, the following environment variables must be set on the Render server
 
 - **`MONGODB_URI`**: The connection string for the MongoDB Atlas database.
 - **`JWT_SECRET`**: A secret key for signing authentication tokens.
 - **`GEMINI_API_KEY`**: The user's Google Gemini API key for content moderation.
 
-These can be added as "Config Vars" in the Heroku dashboard under the "Settings" tab.
+These can be added as "Config Vars" in the Render dashboard
 
 ---
 
@@ -118,7 +118,7 @@ These can be added as "Config Vars" in the Heroku dashboard under the "Settings"
 
 **2025-10-25**
 *   **Deployment:**
-    *   Deployed the backend application to Heroku.
+    *   Deployed the backend application to Render.
     *   Guided the user through deploying the frontend application to Netlify.
     *   **Issue:** Users are unable to log in. Troubleshooting is in progress.
 *   **AI Integration (Content Moderation):**
