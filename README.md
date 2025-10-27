@@ -98,9 +98,7 @@ These can be added as "Config Vars" in the Render dashboard
 
 ---
 
-## Progress Log
-
-*Changes made by your Senior full-stack product engineer, UX designer, and AI architect.*
+changes made***
 
 **2025-10-26**
 *   **Deployment:**
