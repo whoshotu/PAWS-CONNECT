@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import api from '../utils/api';
+import axios from 'axios'; // Import axios directly
 import { Button, TextField, Container, Typography, Box, InputAdornment, IconButton, Alert } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { useAuth } from '../context/AuthContext';
@@ -47,7 +47,7 @@ const Register = () => {
         };
         console.log('Attempting to register with:', newUser);
 
-        const res = await api.post('/users', newUser);
+        const res = await axios.post('https://paws-connect.onrender.com/api/users', newUser);
         console.log('Registration successful, response:', res);
 
         login(res.data); // Log the user in immediately
