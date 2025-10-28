@@ -47,8 +47,16 @@ const Login = () => {
         login(res.data); // Use the login function from AuthContext
         navigate('/'); // Redirect to a home/dashboard page
       } catch (err) {
-        console.error(err.response.data);
-        setServerError(err.response.data.message || 'An error occurred during login.');
+        if (err.response) {
+          // The request was made and the server responded with a status code
+          // that falls out of the range of 2xx
+          console.error(err.response.data);
+          setServerError(err.response.data.message || 'An error occurred during login.');
+        } else {
+          // Something happened in setting up the request that triggered an Error
+          console.error('Error', err.message);
+          setServerError('An error occurred. Please try again later.');
+        }
       }
     }
   };

@@ -16,21 +16,13 @@ connectDB();
 const app = express();
 
 // Middleware
-// Middleware
-const allowedOrigins = [
-  'http://localhost:3000',
-  'https://paws-connect.onrender.com',
-  'https://pawz-connect.netlify.app',
-];
-
 app.use(cors({
-  origin: function (origin, callback) {
-    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
+  origin: [
+    'http://localhost:3000',
+    'https://paws-connect.onrender.com',
+    'https://pawz-connect.netlify.app'
+  ],
+  credentials: true,
 }));
 app.use(express.json());
 
