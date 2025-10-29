@@ -22,7 +22,7 @@ const Post = ({ post }) => {
         <CardMedia
           component="img"
           height="300"
-          image={`http://localhost:5000/${post.mediaUrl.replace(/\\/g, '/')}`}
+          image={`https://paws-connect.onrender.com/${post.mediaUrl.replace(/\\/g, '/')}`}
           alt={post.caption}
         />
       )}

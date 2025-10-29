@@ -37,7 +37,7 @@ const Profile = () => {
         <Box>
           <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
             <Avatar
-              src={`http://localhost:5000/${profile.profilePicture?.replace(/\\/g, '/')}`}
+              src={`https://paws-connect.onrender.com/${profile.profilePicture?.replace(/\\/g, '/')}`}
               sx={{ width: 100, height: 100, mr: 2 }}
             />
             <Box>
